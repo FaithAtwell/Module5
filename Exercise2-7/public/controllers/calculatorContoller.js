@@ -1,3 +1,24 @@
+// http://localhost:3000/controllers/calculatorContoller.js:37
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const output = document.getElementById('ans');
+//     const buttonsContainer = document.getElementById('buttons');
+//
+//     buttonsContainer.addEventListener('click', function (event) {
+//         console.log('Button clicked');
+//         const clickedButton = event.target;
+//         if (clickedButton.tagName === 'BUTTON') {
+//             handleButtonClick(clickedButton.dataset.value);
+//         }
+//     });
+//
+//     function handleButtonClick(value) {
+//         console.log('Handling click with value:', value);
+//         // Update the calculator display with the clicked value
+//         output.value += value;
+//     }
+// });
+
 const addNumbers = (req, res) => {
     let number1 = parseInt(req.query.num1);
     let number2 = parseInt(req.query.num2);
@@ -30,23 +51,3 @@ const divideNumbers = (req, res) => {
 module.exports = {
     addNumbers, multiplyNumbers, subtractNumbers, divideNumbers}
 
-// http://localhost:3000/controllers/calculatorContoller.js:37
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const output = document.getElementById('ans');
-//     const buttonsContainer = document.getElementById('buttons');
-//
-//     buttonsContainer.addEventListener('click', function (event) {
-//         console.log('Button clicked');
-//         const clickedButton = event.target;
-//         if (clickedButton.tagName === 'BUTTON') {
-//             handleButtonClick(clickedButton.dataset.value);
-//         }
-//     });
-//
-//     function handleButtonClick(value) {
-//         console.log('Handling click with value:', value);
-//         // Update the calculator display with the clicked value
-//         output.value += value;
-//     }
-// });
