@@ -1,0 +1,120 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "CalcProj",
+    "description": "Calc",
+    "license": {
+      "name": "FaithAtwell",
+      "url": "somebodywith.greatideas.com"}
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [{
+      "name": "calculatorRoutes",
+      "description": "calculate"}
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/calculator/add": {
+      "get": {
+        "tags": [
+          "addition"
+        ],
+        "summary": "Add 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "type": "number",
+            "description": "The First Number"},
+          {
+            "name": "num2",
+            "in": "query",
+            "type": "number",
+            "description": "The Second number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to add two numbers together"}
+        }
+      }
+    },
+    "/calculator/subtract": {
+      "get": {
+        "tags": [
+          "Subtraction"
+        ],
+        "summary": "Subtract 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "type": "number",
+            "description": "The First Number"},
+          {
+            "name": "num2",
+            "in": "query",
+            "type": "number",
+            "description": "The Second number"}
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to subtract two numbers together"}
+        }
+      }
+    },
+    "/calculator/multiply": {
+      "get": {
+        "tags": [
+          "Multiplication"
+        ],
+        "summary": "Multiply 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "type": "number",
+            "description": "The First Number"
+          },
+          {
+            "name": "num2",
+            "in": "query",
+            "type": "number",
+            "description": "The Second number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to multiply two numbers together"}
+        }
+      }
+    },
+    "/calculator/divide": {
+      "get": {
+        "tags": [
+          "Division"
+        ],
+        "summary": "Divide 2 numbers",
+        "parameters": [{
+            "name": "num1",
+            "in": "query",
+          "type": "number",
+            "description": "The First Number"},
+          {
+            "name": "num2",
+            "in": "query",
+            "type": "number",
+            "description": "The Second number"}
+        ],
+        "responses": {
+          "200": {
+            "description": "This service allows you to divide two numbers together"}
+        }
+      }
+    }
+  }
+}
